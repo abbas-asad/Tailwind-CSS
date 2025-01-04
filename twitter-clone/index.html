@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>X/Home</title>
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
+    <link rel="stylesheet" href="src/output.css">
+</head>
+
+<body class="bg-black text-white min-h-screen">
+    <div class="flex md:container mx-auto">
+        <!-- Sidebar -->
+        <aside class="w-16 lg:w-64 xl:w-[300px] shrink-0">
+            <div class="fixed h-screen flex flex-col p-2">
+                <!-- Logo -->
+                <div class="p-3 mb-2 w-fit rounded-full hover:bg-gray-900 cursor-pointer">
+                    <svg viewBox="0 0 24 24" class="w-8 invert">
+                        <path
+                            d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z">
+                        </path>
+                    </svg>
+                </div>
+
+                <!-- Navigation -->
+                <nav class="space-y-1">
+                    <!-- Home -->
+                    <button class="flex items-center w-full p-3 rounded-full hover:bg-gray-900 transition-colors"
+                        aria-label="Home">
+                        <span class="material-symbols-outlined text-2xl">home</span>
+                        <span class="hidden lg:block ml-4 text-xl">Home</span>
+                    </button>
+
+                    <!-- Search -->
+                    <button class="flex items-center w-full p-3 rounded-full hover:bg-gray-900 transition-colors"
+                        aria-label="Search">
+                        <span class="material-symbols-outlined text-2xl">search</span>
+                        <span class="hidden lg:block ml-4 text-xl">Explore</span>
+                    </button>
+
+                    <!-- Notifications -->
+                    <button class="flex items-center w-full p-3 rounded-full hover:bg-gray-900 transition-colors"
+                        aria-label="Notifications">
+                        <span class="material-symbols-outlined text-2xl">notifications</span>
+                        <span class="hidden lg:block ml-4 text-xl">Notifications</span>
+                    </button>
+
+                    <!-- Message -->
+                    <button class="flex items-center w-full p-3 rounded-full hover:bg-gray-900 transition-colors"
+                        aria-label="Message">
+                        <span class="material-symbols-outlined text-2xl">message</span>
+                        <span class="hidden lg:block ml-4 text-xl">Grok</span>
+                    </button>
+
+                    <!-- Lists -->
+                    <button class="flex items-center w-full p-3 rounded-full hover:bg-gray-900 transition-colors"
+                        aria-label="Lists">
+                        <span class="material-symbols-outlined text-2xl">lists</span>
+                        <span class="hidden lg:block ml-4 text-xl">Lists</span>
+                    </button>
+
+                    <!-- Bookmarks -->
+                    <button class="flex items-center w-full p-3 rounded-full hover:bg-gray-900 transition-colors"
+                        aria-label="Bookmarks">
+                        <span class="material-symbols-outlined text-2xl">bookmarks</span>
+                        <span class="hidden lg:block ml-4 text-xl">Bookmarks</span>
+                    </button>
+
+                    <!-- Communities -->
+                    <button class="flex items-center w-full p-3 rounded-full hover:bg-gray-900 transition-colors"
+                        aria-label="Communities">
+                        <span class="material-symbols-outlined text-2xl">group</span>
+                        <span class="hidden lg:block ml-4 text-xl">Communities</span>
+                    </button>
+
+                    <!-- Premium -->
+                    <button class="flex items-center w-full p-3 rounded-full hover:bg-gray-900 transition-colors"
+                        aria-label="Premium">
+                        <span class="material-symbols-outlined text-2xl">box</span>
+                        <span class="hidden lg:block ml-4 text-xl">Premium</span>
+                    </button>
+
+                    <!-- Profile -->
+                    <button class="flex items-center w-full p-3 rounded-full hover:bg-gray-900 transition-colors"
+                        aria-label="Profile">
+                        <span class="material-symbols-outlined text-2xl">person</span>
+                        <span class="hidden lg:block ml-4 text-xl">Profile</span>
+                    </button>
+
+                    <!-- More -->
+                    <button class="flex items-center w-full p-3 rounded-full hover:bg-gray-900 transition-colors"
+                        aria-label="More">
+                        <span class="material-symbols-outlined text-2xl">pending</span>
+                        <span class="hidden lg:block ml-4 text-xl">More</span>
+                    </button>
+
+                    <!-- Post -->
+                    <button class="flex items-center w-full p-3 rounded-full hover:bg-gray-900 transition-colors"
+                        aria-label="Post">
+                        <span class="material-symbols-outlined text-2xl">add_circle</span>
+                        <span class="hidden lg:block ml-4 text-xl">Post</span>
+                    </button>
+                </nav>
+
+                <!-- Post Button -->
+                <button
+                    class="hidden lg:block w-[90%] mt-4 bg-[#1da1f2] hover:bg-[#1a8cd8] transition-colors font-bold rounded-full py-3 px-8">
+                    Post
+                </button>
+                <button
+                    class="lg:hidden w-12 h-12 mt-4 bg-[#1da1f2] hover:bg-[#1a8cd8] transition-colors rounded-full flex items-center justify-center">
+                    <span class="material-symbols-outlined">edit</span>
+                </button>
+
+                <!-- User Profile -->
+                <div class="mt-auto mb-4">
+                    <button class="flex items-center w-full p-3 rounded-full hover:bg-gray-900 transition-colors">
+                        <img src="images/mainprof.jpg" alt="Profile" class="w-10 h-10 rounded-full">
+                        <div class="hidden lg:block ml-3">
+                            <p class="font-bold text-left">Abbas Asad</p>
+                            <p class="text-gray-500">@abbas-asad</p>
+                        </div>
+                    </button>
+                </div>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="flex-1 border-x border-gray-800 min-h-screen">
+            <!-- Header -->
+            <header class="sticky top-0 z-10 bg-black/80 backdrop-blur-md border-b border-gray-800">
+                <div class="flex justify-between items-center px-4 py-3">
+                    <h1 class="text-xl font-bold">Home</h1>
+                    <button c\lass="p-2 rounded-full hover:bg-gray-900 transition-colors">
+                        <span class="material-symbols-outlined">settings</span>
+                    </button>
+                </div>
+            </header>
+
+            <!-- Post Creation -->
+            <div class="p-4 border-b border-gray-800">
+                <div class="flex gap-4">
+                    <img src="images/mainprof.jpg" alt="My profile" class="w-12 h-12 rounded-full">
+                    <div class="flex-1">
+                        <textarea placeholder="What is happening?"
+                            class="w-full bg-transparent border-none resize-none text-xl focus:outline-none min-h-[60px]"></textarea>
+                        <div class="flex items-center justify-between mt-4 pt-4 border-t border-gray-800">
+                            <div class="flex gap-2 text-[#1da1f2]">
+                                <button class="flex gap-5 transition-colors">
+                                    <span
+                                        class="p-2 rounded-full hover:bg-[#1da1f2]/10 material-symbols-outlined">image</span>
+                                    <span
+                                        class="p-2 rounded-full hover:bg-[#1da1f2]/10 material-symbols-outlined">sentiment_satisfied</span>
+                                </button>
+                                <!-- Other media buttons -->
+                            </div>
+                            <button
+                                class="bg-[#1da1f2] px-4 py-1.5 rounded-full font-bold hover:bg-[#1a8cd8] transition-colors">
+                                Post
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Posts Feed -->
+            <div class="divide-y divide-gray-800">
+                <!-- Post -->
+                <article class="p-4 hover:bg-gray-900/50 transition-colors cursor-pointer overflow-hidden">
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <!-- Profile Image -->
+                        <img src="images/developer.jpg" alt="Developer" class="w-12 h-12 rounded-full md:flex hidden">
+
+                        <!-- Post Content -->
+                        <div class="flex-1">
+                            <!-- User Info -->
+                            <div class="flex items-center gap-2">
+                                <h2 class="font-bold hover:underline">Abbas Asad</h2>
+                                <span class="text-[#1da1f2]">☑️</span>
+                                <span class="text-gray-500">@abbas · 2m</span>
+                            </div>
+
+                            <!-- Post Text -->
+                            <p class="mt-2">The Future of AI: 5 Advancements to Expect in the Next 10 Years.</p>
+
+                            <!-- Post Image -->
+                            <img src="images/ai.jpeg" alt="Ai Future"
+                                class="mt-4 rounded-2xl w-full max-w-full h-auto object-cover">
+
+                            <!-- Interaction Buttons -->
+                            <div class="flex justify-between mt-4 gap-2 sm:gap-4">
+                                <!-- Comment Button -->
+                                <button class="flex items-center gap-2 text-gray-500 hover:text-[#1da1f2] group">
+                                    <div class="p-2 flex gap-1 rounded-full group-hover:bg-[#1da1f2]/20">
+                                        <span class="material-symbols-outlined">chat_bubble</span>
+                                        <span class="hidden sm:inline">5K</span>
+                                    </div>
+                                </button>
+
+                                <!-- Like Button -->
+                                <button class="flex items-center gap-2 text-gray-500 hover:text-[#17a589] group">
+                                    <div class="p-2 flex gap-1 rounded-full group-hover:bg-[#17a589]/20">
+                                        <span class="material-symbols-outlined">thumb_up</span>
+                                        <span class="hidden sm:inline">9K</span>
+                                    </div>
+                                </button>
+
+                                <!-- Share Button -->
+                                <button class="flex items-center gap-2 text-gray-500 hover:text-[#f1c40f] group">
+                                    <div class="p-2 flex gap-1 rounded-full group-hover:bg-[#f1c40f]/20">
+                                        <span class="material-symbols-outlined">share</span>
+                                        <span class="hidden sm:inline">1.3K</span>
+                                    </div>
+                                </button>
+
+                                <!-- Favorite Button -->
+                                <button class="flex items-center gap-2 text-gray-500 hover:text-[#e74c3c] group">
+                                    <div class="p-2 flex gap-1 rounded-full group-hover:bg-[#e74c3c]/20">
+                                        <span class="material-symbols-outlined">favorite</span>
+                                        <span class="hidden sm:inline">7.6K</span>
+                                    </div>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="p-4 hover:bg-gray-900/50 transition-colors cursor-pointer overflow-hidden">
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <!-- Profile Image -->
+                        <img src="images//micheal.jpg" alt="Micheal" class="w-12 h-12 rounded-full md:flex hidden">
+
+                        <!-- Post Content -->
+                        <div class="flex-1">
+                            <!-- User Info -->
+                            <div class="flex items-center gap-2">
+                                <h2 class="font-bold hover:underline">Michael Thompson</h2>
+                                <span class="text-[#1da1f2]">☑️</span>
+                                <span class="text-gray-500">@micheal · 5m</span>
+                            </div>
+
+                            <!-- Post Text -->
+                            <p class="mt-2">Grateful for this new beginning and looking forward to creating
+                                unforgettable memories.</p>
+
+                            <!-- Post Image -->
+                            <img src="images/house.jfif" alt="House"
+                                class="mt-4 rounded-2xl w-full max-w-full h-auto object-cover">
+
+                            <!-- Interaction Buttons -->
+                            <div class="flex justify-between mt-4 gap-2 sm:gap-4">
+                                <!-- Comment Button -->
+                                <button class="flex items-center gap-2 text-gray-500 hover:text-[#1da1f2] group">
+                                    <div class="p-2 flex gap-1 rounded-full group-hover:bg-[#1da1f2]/20">
+                                        <span class="material-symbols-outlined">chat_bubble</span>
+                                        <span class="hidden sm:inline">7.3K</span>
+                                    </div>
+                                </button>
+
+                                <!-- Like Button -->
+                                <button class="flex items-center gap-2 text-gray-500 hover:text-[#17a589] group">
+                                    <div class="p-2 flex gap-1 rounded-full group-hover:bg-[#17a589]/20">
+                                        <span class="material-symbols-outlined">thumb_up</span>
+                                        <span class="hidden sm:inline">10.5K</span>
+                                    </div>
+                                </button>
+
+                                <!-- Share Button -->
+                                <button class="flex items-center gap-2 text-gray-500 hover:text-[#f1c40f] group">
+                                    <div class="p-2 flex gap-1 rounded-full group-hover:bg-[#f1c40f]/20">
+                                        <span class="material-symbols-outlined">share</span>
+                                        <span class="hidden sm:inline">3.2K</span>
+                                    </div>
+                                </button>
+
+                                <!-- Favorite Button -->
+                                <button class="flex items-center gap-2 text-gray-500 hover:text-[#e74c3c] group">
+                                    <div class="p-2 flex gap-1 rounded-full group-hover:bg-[#e74c3c]/20">
+                                        <span class="material-symbols-outlined">favorite</span>
+                                        <span class="hidden sm:inline">6.8K</span>
+                                    </div>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="p-4 hover:bg-gray-900/50 transition-colors cursor-pointer overflow-hidden">
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <!-- Profile Image -->
+                        <img src="images/sirhamzah.jfif" alt="Sir Hamzah" class="w-12 h-12 rounded-full md:flex hidden">
+
+                        <!-- Post Content -->
+                        <div class="flex-1">
+                            <!-- User Info -->
+                            <div class="flex items-center gap-2">
+                                <h2 class="font-bold hover:underline">Hamzah Syed</h2>
+                                <span class="text-[#1da1f2]">☑️</span>
+                                <span class="text-gray-500">@hamzah · 8m</span>
+                            </div>
+
+                            <!-- Post Text -->
+                            <p class="mt-2">Had a fantastic day out with friends! The enjoyment and memories we shared.
+                            </p>
+
+                            <!-- Post Image -->
+                            <img src="images/outing.jfif" alt="Outing"
+                                class="mt-4 rounded-2xl w-full max-w-full h-auto object-cover">
+
+                            <!-- Interaction Buttons -->
+                            <div class="flex justify-between mt-4 gap-2 sm:gap-4">
+                                <!-- Comment Button -->
+                                <button class="flex items-center gap-2 text-gray-500 hover:text-[#1da1f2] group">
+                                    <div class="p-2 flex gap-1 rounded-full group-hover:bg-[#1da1f2]/20">
+                                        <span class="material-symbols-outlined">chat_bubble</span>
+                                        <span class="hidden sm:inline">9K</span>
+                                    </div>
+                                </button>
+
+                                <!-- Like Button -->
+                                <button class="flex items-center gap-2 text-gray-500 hover:text-[#17a589] group">
+                                    <div class="p-2 flex gap-1 rounded-full group-hover:bg-[#17a589]/20">
+                                        <span class="material-symbols-outlined">thumb_up</span>
+                                        <span class="hidden sm:inline">12K</span>
+                                    </div>
+                                </button>
+
+                                <!-- Share Button -->
+                                <button class="flex items-center gap-2 text-gray-500 hover:text-[#f1c40f] group">
+                                    <div class="p-2 flex gap-1 rounded-full group-hover:bg-[#f1c40f]/20">
+                                        <span class="material-symbols-outlined">share</span>
+                                        <span class="hidden sm:inline">4.5K</span>
+                                    </div>
+                                </button>
+
+                                <!-- Favorite Button -->
+                                <button class="flex items-center gap-2 text-gray-500 hover:text-[#e74c3c] group">
+                                    <div class="p-2 flex gap-1 rounded-full group-hover:bg-[#e74c3c]/20">
+                                        <span class="material-symbols-outlined">favorite</span>
+                                        <span class="hidden sm:inline">8.2K</span>
+                                    </div>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+        </main>
+
+        <!-- Right Sidebar -->
+        <aside class="hidden lg:block w-[350px] pl-8 pr-4">
+            <div class="sticky top-0 py-4">
+                <!-- Search -->
+                <div class="relative mb-4">
+                    <span
+                        class="absolute left-4 top-1/2 -translate-y-1/2 material-symbols-outlined text-gray-500">search</span>
+                    <input type="search" placeholder="Search"
+                        class="w-full bg-gray-900 rounded-full py-2 pl-12 pr-4 focus:outline-none focus:ring-1 focus:ring-[#1da1f2]">
+                </div>
+
+                <!-- Premium Card -->
+                <div class="bg-gray-900 rounded-xl p-4 mb-4">
+                    <h2 class="text-xl font-bold mb-2">Subscribe to Premium</h2>
+                    <p class="mb-4 text-gray-300">Subscribe to unlock new features and if eligible, receive a share of
+                        ads revenue.</p>
+                    <button class="bg-[#1da1f2] px-4 py-2 rounded-full font-bold hover:bg-[#1a8cd8] transition-colors">
+                        Subscribe
+                    </button>
+                </div>
+
+                <!-- What's Happening Section -->
+                <div class="bg-gray-900 rounded-xl py-4 mb-4">
+                    <h2 class="text-xl font-bold mb-4 px-3">What's Happening</h2>
+
+                    <div class="p-3 hover:bg-gray-800 rounded-lg cursor-pointer">
+                        <div class="flex justify-between">
+                            <p class="text-sm text-gray-400">Latest Highlights</p>
+                            <button class="text-gray-400 hover:text-gray-300">···</button>
+                        </div>
+                        <p class="font-bold">#TechnologyUpdate</p>
+                        <p class="text-sm text-gray-400">40.2k posts</p>
+                    </div>
+
+                    <!-- Popular Discussions -->
+                    <div class="p-3 hover:bg-gray-800 rounded-lg cursor-pointer">
+                        <div class="flex justify-between">
+                            <p class="text-sm text-gray-400">Popular Discussions</p>
+                            <button class="text-gray-400 hover:text-gray-300">···</button>
+                        </div>
+                        <p class="font-bold">#Sustainability</p>
+                        <p class="text-sm text-gray-400">27.8k posts</p>
+                    </div>
+
+                    <!-- In the Spotlight -->
+                    <div class="p-3 hover:bg-gray-800 rounded-lg cursor-pointer">
+                        <div class="flex justify-between">
+                            <p class="text-sm text-gray-400">In the Spotlight</p>
+                            <button class="text-gray-400 hover:text-gray-300">···</button>
+                        </div>
+                        <p class="font-bold">#YouthVoices</p>
+                        <p class="text-sm text-gray-400">45.1k posts</p>
+                    </div>
+
+                    <!-- Show More Link -->
+                    <a href="#" class="block p-3 text-[#1da1f2] hover:underline">
+                        Show more
+                    </a>
+                </div>
+
+
+                <div class="bg-gray-900 rounded-xl py-4">
+                    <h2 class="text-xl font-bold mb-4 px-3">Who to follow</h2>
+
+                    <!-- GitHub -->
+                    <div class="flex items-center justify-between p-3 hover:bg-gray-800 rounded-lg cursor-pointer">
+                        <div class="flex items-center gap-3">
+                            <img src="/images/github.jfif" alt="GitHub" class="w-10 h-10 rounded-lg" />
+                            <div>
+                                <p class="font-bold">GitHub</p>
+                                <p class="text-gray-500">@github</p>
+                            </div>
+                        </div>
+                        <button
+                            class="bg-white text-black px-4 py-1.5 rounded-full font-bold hover:bg-gray-200 transition-colors">
+                            Follow
+                        </button>
+                    </div>
+
+                    <!-- Netlify -->
+                    <div class="flex items-center justify-between p-3 hover:bg-gray-800 rounded-lg cursor-pointer">
+                        <div class="flex items-center gap-3">
+                            <img src="/images/netlify.png" alt="Netlify" class="w-10 h-10 rounded-lg" />
+                            <div>
+                                <p class="font-bold">Netlify</p>
+                                <p class="text-gray-500">@netlify</p>
+                            </div>
+                        </div>
+                        <button
+                            class="bg-white text-black px-4 py-1.5 rounded-full font-bold hover:bg-gray-200 transition-colors">
+                            Follow
+                        </button>
+                    </div>
+
+                    <!-- Vercel -->
+                    <div class="flex items-center justify-between p-3 hover:bg-gray-800 rounded-lg cursor-pointer">
+                        <div class="flex items-center gap-3">
+                            <img src="/images/vercel.png" alt="Vercel" class="w-10 h-10 rounded-lg" />
+                            <div>
+                                <p class="font-bold">Vercel</p>
+                                <p class="text-gray-500">@vercel</p>
+                            </div>
+                        </div>
+                        <button
+                            class="bg-white text-black px-4 py-1.5 rounded-full font-bold hover:bg-gray-200 transition-colors">
+                            Follow
+                        </button>
+                    </div>
+
+                    <!-- Show More Link -->
+                    <a href="#" class="block p-3 text-[#1da1f2] hover:underline">
+                        Show more
+                    </a>
+                </div>
+
+                <!-- Footer -->
+                <footer class="mt-6 text-sm text-gray-500">
+                    <div class="flex flex-wrap gap-2">
+                        <a href="#" class="hover:underline">Terms of Service</a>
+                        <a href="#" class="hover:underline">Privacy Policy</a>
+                        <a href="#" class="hover:underline">Cookie Policy</a>
+                        <a href="#" class="hover:underline">Accessibility</a>
+                        <a href="#" class="hover:underline">Ads Info</a>
+                        <a href="#" class="hover:underline">More ···</a>
+                    </div>
+                    <p class="mt-2">© 2025 X Corp.</p>
+                </footer>
+
+            </div>
+        </aside>
+    </div>
+</body>
+
+</html>

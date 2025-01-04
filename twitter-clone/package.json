@@ -1,8 +1,21 @@
 {
+  "name": "twitter-clone",
+  "version": "1.0.0",
+  "description": "A Twitter UI clone built with Tailwind CSS.",
+  "main": "index.js",
+  "scripts": {
+    "build": "npx tailwindcss -i ./src/input.css -o ./src/output.css --watch",
+    "start": "npm run build"
+  },
+  "keywords": [
+    "tailwindcss",
+    "twitter-clone",
+    "UI",
+    "responsive-design"
+  ],
+  "author": "Abbas",
+  "license": "MIT",
   "devDependencies": {
     "tailwindcss": "^3.4.17"
-  },
-  "scripts": {
-    "build": "npx tailwindcss -i ./src/input.css -o ./src/output.css --watch"
   }
 }
